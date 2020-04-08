@@ -1,0 +1,43 @@
+{
+  "name": "Erxes Logger on Heroku",
+  "description": "Erxes Logger",
+  "keywords": [
+    "Marketing",
+    "sales",
+    "customer engagement",
+    "customer support",
+    "CRM",
+    "node",
+    "express",
+    "react",
+    "typescript",
+    "webpack",
+    "graphql",
+    "apollo"
+  ],
+  "website": "https://erxes.io",
+  "repository": "https://github.com/erxes/erxes",
+  "logo": "https://raw.githubusercontent.com/erxes/erxes/master/ui/public/images/logo-dark.png",
+  "success_url": "/",
+  "env": {
+    "PORT": {
+      "description": "A port number that erxes api will be running on",
+      "value": "3800"
+    },
+    "MONGO_URL": {
+      "description": "Erxes Logger MONGO_URL",
+      "value": "MONGO_URL"
+    }
+  },
+  "addons": [
+    {
+      "plan": "mongolab:sandbox",
+      "as": "MONGO"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/batnasan/heroku-buildpack-subdir"
+    }
+  ]
+}
