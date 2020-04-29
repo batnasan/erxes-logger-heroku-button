@@ -27,6 +27,10 @@
     "MONGO_URL": {
       "description": "Erxes Logger MONGO_URL",
       "value": "MONGO_URL"
+    },
+    "RABBITMQ_HOST": {
+      "description": "RABBITMQ_HOST",
+      "value": "copy and paste from erxes-api RABBITMQ_HOST config var"
     }
   },
   "addons": [
